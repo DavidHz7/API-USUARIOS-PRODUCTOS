@@ -30,4 +30,4 @@ RUN npm install dotenv
 
 COPY productos/ /usr/productos/
 
-# CMD ["nodemon", "app.js"]
+CMD ["nodemon", "app.js"]
