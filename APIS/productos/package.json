@@ -2,7 +2,7 @@
   "name": "terceraapp2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "set NODE_OPTIONS=--experimental-vm-modules && jest"
   },

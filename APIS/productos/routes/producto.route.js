@@ -6,7 +6,7 @@ const routerprod = Router();
 
 
 
-routerprod.get('',viewproducto);
+routerprod.get('/',viewproducto);
 routerprod.get('/lista',productoGet);
 
 

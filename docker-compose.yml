@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
 
-  users_api:
+  producto_api:
     build:
       context: ./APIS
     deploy:
@@ -17,7 +17,7 @@ services:
     ports:
       - "52000:3001"
     volumes:
-      - ./APIS/users/:/usr/usersAPI/
+      - ./APIS/productos/:/usr/productos/
     depends_on:
       - db
     networks:

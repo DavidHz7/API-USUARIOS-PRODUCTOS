@@ -18,16 +18,16 @@ RUN npm install prisma -g\
     && npm i nodemon -g \
     && npm i @prisma/client -g
 
-RUN mkdir -p /usr/usersAPI/
+RUN mkdir -p /usr/productos/
 
-WORKDIR /usr/usersAPI/
+WORKDIR /usr/productos/
 
-COPY users/package*.json /usr/usersAPI/
+COPY productos/package*.json /usr/productos/
 
 RUN npm install
 
-RUN npm install dotenv --save-dev
+RUN npm install dotenv
 
-COPY users/ /usr/usersAPI/
+COPY productos/ /usr/productos/
 
-CMD ["nodemon", "app.js"]
+# CMD ["nodemon", "app.js"]
